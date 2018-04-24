@@ -32,3 +32,7 @@ Route::get('pengajar', function(){
 Route::get('donatur', function(){
     return view('donatur');
 });
+
+Route::get('artikel', function(){
+    return view('artikel');
+});
