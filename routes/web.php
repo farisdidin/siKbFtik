@@ -36,3 +36,8 @@ Route::get('donatur', function(){
 Route::get('artikel', function(){
     return view('artikel');
 });
+
+Route::get('calendar', function(){
+    return view('calendar');
+});
+
