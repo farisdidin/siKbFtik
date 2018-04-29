@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 Route::get('admin', function () {
     return view('admin_template');
@@ -26,6 +26,10 @@ Route::get('register', function(){
 });
 
 Route::get('pengajar', function(){
+    return view('pengajar');
+});
+
+Route::post('pengajar', function(){
     return view('pengajar');
 });
 

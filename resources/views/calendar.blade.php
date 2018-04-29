@@ -1,85 +1,91 @@
-@extends('pengajar')
+@extends('page_template')
 @section('css')
     
   <link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.min.css">
   <link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.print.min.css" media="print">
+  <link rel="stylesheet" href="../../bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="../../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="../../plugins/timepicker/bootstrap-timepicker.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+@endsection
+
+@section('menu')
+<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="#">Beranda <span class="sr-only">(current)</span></a></li>
+    <li><a href="#">Diskusi</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Post @yield('post') <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="/artikel">Post Terbaru</a></li>
+        <li><a href="#">Edit Post</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+        <li class="divider"></li>
+        <li><a href="#">One more separated link</a></li>
+      </ul>
+    </li>
+    <li ><a href="#">Materi <span class="sr-only">(current)</span></a></li>
+    <li class="active"><a href="/calendar"  >Timeline Pengajar</a></li>
+    <li><a href="#">Daftar Pengajar</a></li>
+    
+    </ul>
+  <form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+      <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+    </div>
+  </form>
+</div>
+    
 @endsection
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Calendar
-        <small>Control panel</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Calendar</li>
-      </ol>
-    </section>
-
+    
     <!-- Main content -->
     <section class="content">
       <div class="row">
         <div class="col-md-3">
           <div class="box box-solid">
             <div class="box-header with-border">
-              <h4 class="box-title">Draggable Events</h4>
+              <h4 class="box-title">Tambahkan Kegiatan</h4>
             </div>
             <div class="box-body">
-              <!-- the events -->
-              <div id="external-events">
-                <div class="external-event bg-green">Lunch</div>
-                <div class="external-event bg-yellow">Go home</div>
-                <div class="external-event bg-aqua">Do homework</div>
-                <div class="external-event bg-light-blue">Work on UI design</div>
-                <div class="external-event bg-red">Sleep tight</div>
-                <div class="checkbox">
-                  <label for="drop-remove">
-                    <input type="checkbox" id="drop-remove">
-                    remove after drop
-                  </label>
+              <form role="form">
+                <div class="form-group">
+                  <label for="">Nama Kegiatan</label>
+                  <div class="input-group">
+                    <input type="text" name="" id="" class="form-cotrol" placeholder="Nama Kegiatan">
+  
+                  </div>
+                  
+                  <!-- /.input group -->
                 </div>
-              </div>
+                <div class="form-group">
+                  <label>Waktu Pelaksanaan</label>
+  
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right" id="reservationtime">
+                  </div>
+                </div>
+                <div class="box-footer">
+                  <button type="submit" class="btn btn-primary">Tambahkan</button>
+                </div>
+              </form>
+              
             </div>
             <!-- /.box-body -->
           </div>
           <!-- /. box -->
-          <div class="box box-solid">
-            <div class="box-header with-border">
-              <h3 class="box-title">Create Event</h3>
-            </div>
-            <div class="box-body">
-              <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
-                <!--<button type="button" id="color-chooser-btn" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Color <span class="caret"></span></button>-->
-                <ul class="fc-color-picker" id="color-chooser">
-                  <li><a class="text-aqua" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-blue" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-light-blue" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-teal" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-yellow" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-orange" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-green" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-lime" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-red" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-purple" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-fuchsia" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-muted" href="#"><i class="fa fa-square"></i></a></li>
-                  <li><a class="text-navy" href="#"><i class="fa fa-square"></i></a></li>
-                </ul>
-              </div>
-              <!-- /btn-group -->
-              <div class="input-group">
-                <input id="new-event" type="text" class="form-control" placeholder="Event Title">
-
-                <div class="input-group-btn">
-                  <button id="add-new-event" type="button" class="btn btn-primary btn-flat">Add</button>
-                </div>
-                <!-- /btn-group -->
-              </div>
-              <!-- /input-group -->
-            </div>
-          </div>
+          
         </div>
         <!-- /.col -->
         <div class="col-md-9">
@@ -105,6 +111,17 @@
 
 <script src="/bower_components/moment/moment.js"></script>
 <script src="/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="/bower_components/moment/min/moment.min.js"></script>
+<script src="/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- bootstrap color picker -->
+<script src="/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<script src="/plugins/input-mask/jquery.inputmask.js"></script>
+<script src="/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="/plugins/input-mask/jquery.inputmask.extensions.js"></script>
 
 <script>
     $(function () {
@@ -267,6 +284,73 @@
         $('#new-event').val('')
       })
     })
+
+
+     $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+
+    //Datemask dd/mm/yyyy
+    $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+    //Datemask2 mm/dd/yyyy
+    $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+    //Money Euro
+    $('[data-mask]').inputmask()
+
+    //Date range picker
+    $('#reservation').daterangepicker()
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
+    //Date range as a button
+    $('#daterange-btn').daterangepicker(
+      {
+        ranges   : {
+          'Today'       : [moment(), moment()],
+          'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month'  : [moment().startOf('month'), moment().endOf('month')],
+          'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        startDate: moment().subtract(29, 'days'),
+        endDate  : moment()
+      },
+      function (start, end) {
+        $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+      }
+    )
+
+    //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass   : 'iradio_minimal-blue'
+    })
+    //Red color scheme for iCheck
+    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+      checkboxClass: 'icheckbox_minimal-red',
+      radioClass   : 'iradio_minimal-red'
+    })
+    //Flat red color scheme for iCheck
+    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+      checkboxClass: 'icheckbox_flat-green',
+      radioClass   : 'iradio_flat-green'
+    })
+
+    //Colorpicker
+    $('.my-colorpicker1').colorpicker()
+    //color picker with addon
+    $('.my-colorpicker2').colorpicker()
+
+    //Timepicker
+    $('.timepicker').timepicker({
+      showInputs: false
+    })
+  })    
   </script>
 @endsection
   

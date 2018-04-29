@@ -59,7 +59,7 @@
                 <!-- The user image in the navbar-->
                 <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                <span class="hidden-xs">Pengajar</span>
+                <span class="hidden-xs">@yield('user')</span>
               </a>
               <ul class="dropdown-menu">
                 <!-- The user image in the menu -->
@@ -67,7 +67,7 @@
                   <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                   <p>
-                    Alexander Pierce - Web Developer
+                    Alexander Pierce - @yield('user')
                     <small>Member since Nov. 2012</small>
                   </p>
                 </li>
@@ -108,17 +108,7 @@
   <div class="content-wrapper">
     <div class="container">
       <!-- Content Header (Page header) -->
-      <section class="content-header">
-        <h1>
-          Top Navigation
-          <small>Example 2.0</small>
-        </h1>
-        <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li><a href="#">Layout</a></li>
-          <li class="active">Top Navigation</li>
-        </ol>
-      </section>
+     
 
       <!-- Main content -->
       @yield('content')
