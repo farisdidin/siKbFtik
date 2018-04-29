@@ -12,6 +12,9 @@
 
           <h3 class="box-title">Judul Artikel</h3>
         </div>
+        <div class="box-header with-border">
+          <h4 class="box-title">23-4-2018</h4>
+        </div>
         <!-- /.box-header -->
         <div class="box-body">
           <p align="justify" style="">
