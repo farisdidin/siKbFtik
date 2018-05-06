@@ -45,3 +45,6 @@ Route::get('calendar', function(){
     return view('calendar');
 });
 
+Route::get('artikel/1', function(){
+    return view('detail-artikel');
+});
