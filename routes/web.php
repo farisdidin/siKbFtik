@@ -21,8 +21,12 @@ Route::get('test', 'TestController@index');
 Route::get('login', function(){
     return view('login');
 });
-Route::get('register', function(){
-    return view('register');
+// Route::get('register', function(){
+//     return view('register');
+// });
+
+Route::get('register-donatur', function(){
+    return view('register-donatur');
 });
 
 Route::get('pengajar', function(){
@@ -48,3 +52,11 @@ Route::get('calendar', function(){
 Route::get('artikel/1', function(){
     return view('detail-artikel');
 });
+
+Route::get('materi-pengajar', function(){
+    return view('materi-pengajar');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
