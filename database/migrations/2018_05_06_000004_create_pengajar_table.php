@@ -23,9 +23,10 @@ class CreatePengajarTable extends Migration
         if (Schema::hasTable($this->set_schema_table)) return;
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->increments('NRP');
+            $table->string('NRP');
+            $table->primary('NRP');
             $table->string('Username', 25);
-            $table->string('Password', 50);
+            $table->string('Password');
             $table->string('Nama_Pengajar', 100);
             $table->string('TTL', 200);
             $table->string('Alamat', 200);

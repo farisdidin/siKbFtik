@@ -18,9 +18,9 @@ Route::get('admin', function () {
     return view('admin_template');
 });
 Route::get('test', 'TestController@index');
-Route::get('login', function(){
-    return view('login');
-});
+// Route::get('login', function(){
+//     return view('login');
+// });
 // Route::get('register', function(){
 //     return view('register');
 // });
@@ -31,7 +31,7 @@ Route::get('register-donatur', function(){
 
 Route::get('pengajar', function(){
     return view('pengajar');
-});
+})->name('pengajar');
 
 Route::post('pengajar', function(){
     return view('pengajar');
@@ -57,6 +57,9 @@ Route::get('materi-pengajar', function(){
     return view('materi-pengajar');
 });
 
-Auth::routes();
-
+Route::get('register', 'AuthController@showRegisterForm');
+Route::post('register', 'AuthController@register');
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('login','AuthController@showLoginForm')->name('login');
+Route::post('login','AuthController@login')->name('auth.login');
