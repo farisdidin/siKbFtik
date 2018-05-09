@@ -18,11 +18,11 @@
                     <form action="{{ route('auth.login') }}" method="post">
                         @csrf
                         <div class="form-group has-feedback">
-                          <input name="username" type="text" class="form-control" placeholder="Username">
+                          <input name="username" type="text" class="form-control" placeholder="Username" required>
                           <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                         </div>
                         <div class="form-group has-feedback">
-                          <input name="password" type="password" class="form-control" placeholder="Kata Sandi">
+                          <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required>
                           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                         </div>
                         <div class="row">
@@ -45,11 +45,11 @@
                     <form action="auth.login" method="get">
                         @csrf
                         <div class="form-group has-feedback">
-                          <input name="username" type="text" class="form-control" placeholder="Username donatur">
+                          <input name="username" type="text" class="form-control" placeholder="Username donatur" required>
                           <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                         </div>
                         <div class="form-group has-feedback">
-                          <input name="password" type="password" class="form-control" placeholder="Kata Sandi">
+                          <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required>
                           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                         </div>
                         <div class="row">
