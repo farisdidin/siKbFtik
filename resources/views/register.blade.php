@@ -20,32 +20,33 @@
             <span class="fa fa fw fa-credit-card form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input name="username" type="text" class="form-control" placeholder="Username">
+            <input name="username" type="text" class="form-control" placeholder="Username" required>
             <span class="fa fa fw fa-user form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input name="ttl" type="text" class="form-control" placeholder="TTL">
+            <input name="ttl" type="date" class="form-control" placeholder="TTL">
             <span class="fa fa fw fa-birthday-cake form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
             <input name="alamat" type="text" class="form-control" placeholder="Alamat">
-            <span class="fa fa fw fa-home form-control-feedback"></span>
+            <span class="glyphicon glyphicon-home form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
             <input name="handphone" type="text" class="form-control" placeholder="Phone">
-            <span class="fa fa fw fa-mobile-phone form-control-feedback"></span>
+            <span class="glyphicon glyphicon-phone form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input name="password" type="password" class="form-control" placeholder="Kata Sandi">
+            <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required>
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Ketik Ulang Kata Sandi">
-            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+            <input type="password" class="form-control" placeholder="Ketik Ulang Kata Sandi" required>
+            <span class="glyphicon glyphicon-repeat form-control-feedback"></span>
           </div>
           <div class="row">
             <div class="col-xs-8">
               <div class="checkbox icheck">
+                <a href="/login" class="text-center">Sudah menjadi anggota</a>
                 {{-- <label>
                   <input type="checkbox"> I agree to the <a href="#">terms</a>
                 </label> --}}
@@ -61,7 +62,6 @@
     
         
     
-        <a href="/login" class="text-center">Sudah menjadi anggota</a>
       </div>
       <!-- /.form-box -->
     </div>
