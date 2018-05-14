@@ -56,6 +56,9 @@ Route::get('artikel/1', function(){
 Route::get('materi-pengajar', function(){
     return view('materi-pengajar');
 });
+Route::get('daftar-pengajar', function(){
+    return view('daftar-pengajar');
+});
 
 Route::get('register', 'AuthController@showRegisterForm');
 Route::post('register', 'AuthController@register');

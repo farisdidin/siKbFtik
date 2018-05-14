@@ -17,7 +17,7 @@
       </li>
       <li ><a href="/materi-pengajar">Materi <span class="sr-only">(current)</span></a></li>
       <li><a href="/calendar">Timeline Pengajar</a></li>
-      <li><a href="#">Daftar Pengajar</a></li>
+      <li><a href="daftar-pengajar">Daftar Pengajar</a></li>
       
       </ul>
     <form class="navbar-form navbar-left" role="search">
