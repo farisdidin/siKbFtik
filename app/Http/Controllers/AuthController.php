@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Validator;
 use Auth;
 use Session;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\MessageBag;
 
 
 class AuthController extends Controller
@@ -41,10 +42,8 @@ class AuthController extends Controller
             }
             else{
                 Session::flash('fail', 'login gagal');
-                dd($userdata);
-                return redirect()->route('login')
-
-                    ->withErrors(['Email/Username atau Password salah'])
+                $errors = new MessageBag(['password'=>['Email/Username atau Password salah']]);
+                return redirect()->route('login')->withErrors($errors)
                     ->withInput(Input::except('password'));
             }
         }

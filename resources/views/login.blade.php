@@ -15,6 +15,11 @@
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="tab_pengajar">
+                    @if ($error = $errors->first('password'))
+                        <div class="alert alert-danger">
+                          {{ $error }}
+                        </div>
+                    @endif
                     <form action="{{ route('auth.login') }}" method="post">
                         @csrf
                         <div class="form-group has-feedback">
