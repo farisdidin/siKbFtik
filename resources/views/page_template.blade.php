@@ -67,7 +67,7 @@
                   <img src="/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                   <p>
-                    Alexander Pierce - @yield('user')
+                    M. Faris Didin - @yield('user')
                     <small>Member since Nov. 2012</small>
                   </p>
                 </li>

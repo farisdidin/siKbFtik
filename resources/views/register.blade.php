@@ -11,34 +11,42 @@
     
       <form  method="POST" action="register">
           @csrf
+          <label>Nama Lengkap:</label>
           <div class="form-group has-feedback">
             <input name="nama" type="text" class="form-control" placeholder="Nama lengkap">
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
           </div>
+          <label>Nomor Identitas:</label>
           <div class="form-group has-feedback">
             <input name="nrp" type="text" class="form-control" placeholder="NRP">
             <span class="fa fa fw fa-credit-card form-control-feedback"></span>
           </div>
+          <label>Username:</label>
           <div class="form-group has-feedback">
             <input name="username" type="text" class="form-control" placeholder="Username" required>
             <span class="fa fa fw fa-user form-control-feedback"></span>
           </div>
+          <label>Tanggal Lahir:</label>
           <div class="form-group has-feedback">
             <input name="ttl" type="date" class="form-control" placeholder="TTL">
             <span class="fa fa fw fa-birthday-cake form-control-feedback"></span>
           </div>
+          <label>Alamat:</label>
           <div class="form-group has-feedback">
             <input name="alamat" type="text" class="form-control" placeholder="Alamat">
             <span class="glyphicon glyphicon-home form-control-feedback"></span>
           </div>
+          <label>Nomor telepon:</label>
           <div class="form-group has-feedback">
             <input name="handphone" type="text" class="form-control" placeholder="Phone">
             <span class="glyphicon glyphicon-phone form-control-feedback"></span>
           </div>
+          <label>Kata Sandi:</label>
           <div class="form-group has-feedback">
             <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required>
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
+          <label>Ulangi Kata Sandi:</label>
           <div class="form-group has-feedback">
             <input type="password" class="form-control" placeholder="Ketik Ulang Kata Sandi" required>
             <span class="glyphicon glyphicon-repeat form-control-feedback"></span>
