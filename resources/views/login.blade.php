@@ -22,10 +22,12 @@
                     @endif
                     <form action="{{ route('auth.login') }}" method="post">
                         @csrf
+                        <label>Username:</label>
                         <div class="form-group has-feedback">
                           <input name="username" type="text" class="form-control" placeholder="Username" required>
                           <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                         </div>
+                        <label>Kata Sandi:</label>
                         <div class="form-group has-feedback">
                           <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required>
                           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
