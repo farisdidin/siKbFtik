@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcome1');
 });
 Route::get('admin', function () {
     return view('admin_template');
