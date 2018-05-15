@@ -9,6 +9,7 @@
       <div class="login-box-body">
         <p class="login-box-msg"></p>
         <div class="nav-tabs-custom">
+            <h4>Temukan akun SIKB anda</h4>
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab_pengajar" data-toggle="tab">Pengajar</a></li>
                 <li><a href="#tab_donatur" data-toggle="tab">Donatur</a></li>
@@ -27,13 +28,6 @@
                           <input name="username" type="text" class="form-control" placeholder="Username" required>
                           <span class="glyphicon glyphicon-user form-control-feedback"></span>
                         </div>
-                        <label>Kata Sandi:</label>
-                        <div class="form-group has-feedback">
-                          <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required>
-                          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                          <a href="lupa-password" class="text-center">Lupa Password</a>
-                        </div>
-                        
                         <div class="row">
                           <div class="col-xs-8">
                             <div class="checkbox icheck">
@@ -42,7 +36,7 @@
                           </div>
                           <!-- /.col -->
                           <div class="col-xs-4">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat" > Masuk</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-flat" > Cari</button>
                           </div>
                           <!-- /.col -->
                         </div>
@@ -58,13 +52,6 @@
                           <input name="username" type="text" class="form-control" placeholder="Username" required>
                           <span class="glyphicon glyphicon-user form-control-feedback"></span>
                         </div>
-                        <label>Kata Sandi:</label>
-                        <div class="form-group has-feedback">
-                          <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required>
-                          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                          <a href="lupa-password" class="text-center">Lupa Password</a>
-                        </div>
-                        
                         <div class="row">
                           <div class="col-xs-8">
                             <div class="checkbox icheck">
@@ -73,7 +60,7 @@
                           </div>
                           <!-- /.col -->
                           <div class="col-xs-4">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat" > Masuk</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-flat" >Cari</button>
                           </div>
                           <!-- /.col -->
                         </div>
@@ -81,20 +68,9 @@
       
                 </div>
       
-      
             </div>
         </div>
-
         
-        
-    
-        
-        <!-- /.social-auth-links -->
-    
-       
-        <a href="/register" class="text-center">Daftar Anggota Baru</a>
-        <br>
-    
       </div>
       <!-- /.login-box-body -->
     </div>

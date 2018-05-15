@@ -60,6 +60,9 @@ Route::get('daftar-pengajar', function(){
     return view('daftar-pengajar');
 });
 
+Route::get('lupa-password', function(){
+    return view('lupa-password');
+});
 Route::get('register', 'AuthController@showRegisterForm');
 Route::post('register', 'AuthController@register');
 Route::get('/home', 'HomeController@index')->name('home');
