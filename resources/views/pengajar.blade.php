@@ -4,17 +4,8 @@
 <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
   <ul class="nav navbar-nav">
     <li class="active"><a href="#">Beranda <span class="sr-only">(current)</span></a></li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown">Post <span class="caret"></span></a>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        <li><a href="/artikel">Post Terbaru</a></li>
-        <li><a href="#">Edit Post</a></li>
-        <li><a href="#">Something else here</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Separated link</a></li>
-        <li class="divider"></li>
-        <li><a href="#">One more separated link</a></li>
-      </ul>
+    <li>
+      <a href="artikel">Post </span></a>
     </li>
     <li ><a href="/materi-pengajar">Materi <span class="sr-only">(current)</span></a></li>
     <li><a href="/calendar">Timeline Pengajar</a></li>
@@ -80,7 +71,7 @@
         </ul>
       </li>
     </ul>
-  </div>
+</div>
 @endsection
 
 @section('content')

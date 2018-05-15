@@ -1,4 +1,13 @@
 @extends('page_template')
+@section('username')
+<div class="navbar-custom-menu">
+    <ul class="nav navbar-nav">
+      <li><a href="register">Daftar</a></li>
+      <li><a href="login">Masuk</a></li>
+    </ul>
+</div>
+    
+@endsection
 
 @section('content')
 <div class="content-wrapper" style="min-height: 280px;">
