@@ -63,9 +63,15 @@ Route::get('daftar-pengajar', function(){
 Route::get('lupa-password', function(){
     return view('lupa-password');
 });
+
+Route::get('lupa-password-find', function(){
+    return view('lupa-password-find');
+});
+
 Route::get('register', 'AuthController@showRegisterForm');
 Route::post('register', 'AuthController@register');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('login','AuthController@showLoginForm')->name('login');
 Route::post('login','AuthController@login')->name('auth.login');
+

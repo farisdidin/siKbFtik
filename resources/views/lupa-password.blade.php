@@ -16,32 +16,25 @@
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="tab_pengajar">
-                    @if ($error = $errors->first('password'))
-                        <div class="alert alert-danger">
-                          {{ $error }}
-                        </div>
-                    @endif
-                    <form action="{{ route('auth.login') }}" method="post">
-                        @csrf
-                        <label>Username:</label>
-                        <div class="form-group has-feedback">
-                          <input name="username" type="text" class="form-control" placeholder="Username" required>
-                          <span class="glyphicon glyphicon-user form-control-feedback"></span>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-8">
-                            <div class="checkbox icheck">
-                             
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                          <div class="col-xs-4">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat" > Cari</button>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                    </form>
-      
+                    
+                  <label>Username:</label>
+                  <div class="form-group has-feedback">
+                    <input name="username" type="text" class="form-control" placeholder="Username" required>
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <div class="checkbox icheck">
+                       
+                      </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-4">
+                      <button type="submit" class="btn btn-primary btn-block btn-flat" onclick="window.location.href='/lupa-password-find'">Cari</button>
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                    
                 </div>
       
                 <div class="tab-pane " id="tab_donatur">
@@ -91,5 +84,5 @@
         });
       });
     </script>
-    </body>
+</body>
 @endsection 

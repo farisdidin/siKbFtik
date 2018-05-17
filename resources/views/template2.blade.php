@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="{{ asset("/dist/css/AdminLTE.min.css")}}">
   <!-- iCheck -->
   <link rel="stylesheet" href="{{ asset("/plugins/iCheck/square/blue.css")}}">
+  <link rel="stylesheet" href="{{ asset("/plugins/iCheck/all.css") }}">
+  <link rel="stylesheet" href="/bower_components/select2/dist/css/select2.min.css">
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,5 +33,6 @@
 </head>
 <body>
     @yield('content')
+    @yield('script')
 </body>
 </html>
