@@ -42,7 +42,7 @@ class AuthController extends Controller
             }
             else{
                 Session::flash('fail', 'login gagal');
-                $errors = new MessageBag(['password'=>['Email/Username atau Password salah']]);
+                $errors = new MessageBag(['password'=>['Username atau Password salah']]);
                 return redirect()->route('login')->withErrors($errors)
                     ->withInput(Input::except('password'));
             }

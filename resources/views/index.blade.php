@@ -2,8 +2,8 @@
 @section('username')
 <div class="navbar-custom-menu">
     <ul class="nav navbar-nav">
-      <li><a href="register">Daftar</a></li>
-      <li><a href="login">Masuk</a></li>
+      <li><a href="register"><strong>Daftar</strong></a></li>
+      <li><a href="login"><strong>Masuk</strong></a></li>
     </ul>
 </div>
     

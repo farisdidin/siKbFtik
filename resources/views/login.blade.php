@@ -31,7 +31,7 @@
                         <div class="form-group has-feedback">
                           <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required>
                           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                          <a href="lupa-password" class="text-center">Lupa Password</a>
+                          <a href="lupa-password" class="text-center">Lupa Katasandi.</a>
                         </div>
                         
                         <div class="row">
@@ -62,7 +62,7 @@
                         <div class="form-group has-feedback">
                           <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required>
                           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                          <a href="lupa-password" class="text-center">Lupa Password</a>
+                          <a href="lupa-password" class="text-center">Lupa Katasandi.</a>
                         </div>
                         
                         <div class="row">
