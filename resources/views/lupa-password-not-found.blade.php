@@ -7,8 +7,11 @@
       </div>
       <!-- /.login-logo -->
       <div class="login-box-body">
+          
         <p class="login-box-msg"></p>
         <div class="nav-tabs-custom">
+            <h4 class="text-red"><i class="fa fa-warning text-red"></i> Akun yang anda masukkan tidak ditemukan</h4>
+            
             <h4>Temukan akun SIKB anda</h4>
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab_pengajar" data-toggle="tab">Pengajar</a></li>
@@ -88,9 +91,6 @@
         var user = document.getElementById('username').value;
         if(user == 'didin'){
           window.location.href = '{{ url("/lupa-password-find") }}';
-        }
-        else{
-          window.location.href = '{{ url("/lupa-password-not-found") }}';
         }
       }
     </script>

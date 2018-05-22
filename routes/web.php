@@ -30,7 +30,8 @@ Route::get('register-donatur', function(){
 });
 
 Route::get('pengajar', function(){
-    return view('pengajar');
+    $data['userstatus']= 'Pengajar';
+    return view('pengajar',$data);
 })->name('pengajar');
 
 Route::post('pengajar', function(){
@@ -42,22 +43,27 @@ Route::get('donatur', function(){
 });
 
 Route::get('artikel', function(){
-    return view('artikel');
+    $data['userstatus']= 'Pengajar';
+    return view('artikel',$data);
 });
 
 Route::get('calendar', function(){
-    return view('calendar');
+    $data['userstatus']= 'Pengajar';
+    return view('calendar',$data);
 });
 
 Route::get('artikel/1', function(){
-    return view('detail-artikel');
+    $data['userstatus']= 'Pengajar';
+    return view('detail-artikel',$data);
 });
 
 Route::get('materi-pengajar', function(){
-    return view('materi-pengajar');
+    $data['userstatus']= 'Pengajar';
+    return view('materi-pengajar',$data);
 });
 Route::get('daftar-pengajar', function(){
-    return view('daftar-pengajar');
+    $data['userstatus']= 'Pengajar';
+    return view('daftar-pengajar',$data);
 });
 
 Route::get('lupa-password', function(){
@@ -67,6 +73,29 @@ Route::get('lupa-password', function(){
 Route::get('lupa-password-find', function(){
     return view('lupa-password-find');
 });
+Route::get('lupa-password-not-found', function(){
+    return view('lupa-password-not-found');
+});
+
+
+Route::get('post-artikel', function(){
+    $data['userstatus']= 'Pengajar';
+    return view('post-artikel',$data);
+});
+Route::get('diskusi', function(){
+    return view('diskusi');
+});
+Route::get('laporan-kegiatan', function(){
+    return view('laporan-kegiatan');
+});
+Route::get('data-donatur', function(){
+    return view('data-donatur');
+});
+Route::get('donatur-beranda', function(){
+    $data['userstatus']= 'donatur';
+    return view('donatur-beranda',$data);
+});
+
 
 Route::get('register', 'AuthController@showRegisterForm');
 Route::post('register', 'AuthController@register');

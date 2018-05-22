@@ -1,6 +1,6 @@
 <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
     <ul class="nav navbar-nav">
-      <li class=""><a href="#">Beranda <span class="sr-only">(current)</span></a></li>
+      <li class="@yield('beranda')"><a href="#">Beranda <span class="sr-only"></span></a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Post <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">

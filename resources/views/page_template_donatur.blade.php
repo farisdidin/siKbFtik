@@ -48,21 +48,11 @@
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="@yield('beranda')"><a href="#">Beranda <span class="sr-only"></span></a></li>
-            <li class="dropdown">
-              <a href="#" class="@yield('post') dropdown-toggle" data-toggle="dropdown">Post <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="/artikel">Post Terbaru</a></li>
-                <li><a href="#">Edit Post</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
+            <li class="@yield('kegiatan')">
+              <a href="/kegiatan" class=" dropdown-toggle" >Kegiatan</a>
+              
             </li>
-            <li class="@yield('materi')"><a href="/materi-pengajar">Materi <span class="sr-only">(current)</span></a></li>
-            <li class="@yield('timeline')"><a href="/calendar">Timeline Pengajar</a></li>
-            <li class="@yield('daftar')"><a href="/daftar-pengajar">Daftar Pengajar</a></li>
+            <li class="@yield('donasi')"><a href="/materi-pengajar">Donasi <span class="sr-only">(current)</span></a></li>
             
             </ul>
           <form class="navbar-form navbar-left" role="search">

@@ -17,7 +17,7 @@
             <img src="/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
             <p>
-              M. Faris Didin - Pengajar
+              M. Faris Didin - {{ $userstatus }}
               {{-- <small>Member since Nov. 2012</small> --}}
             </p>
           </li>

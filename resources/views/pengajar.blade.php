@@ -1,25 +1,9 @@
 @extends('page_template')
 
-@section('menu')
-<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-  <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Beranda <span class="sr-only">(current)</span></a></li>
-    <li>
-      <a href="artikel">Post </span></a>
-    </li>
-    <li ><a href="/materi-pengajar">Materi <span class="sr-only">(current)</span></a></li>
-    <li><a href="/calendar">Timeline Pengajar</a></li>
-    <li><a href="#">Daftar Pengajar</a></li>
+
+@section('beranda','active')
     
-    </ul>
-  <form class="navbar-form navbar-left" role="search">
-    <div class="form-group">
-      <input type="text" class="form-control" id="navbar-search-input" placeholder="Pencarian">
-    </div>
-  </form>
-</div>
-    
-@endsection
+
 @section('username')
 @include('user')
 @endsection
