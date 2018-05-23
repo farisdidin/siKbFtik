@@ -91,9 +91,18 @@ Route::get('laporan-kegiatan', function(){
 Route::get('data-donatur', function(){
     return view('data-donatur');
 });
+
 Route::get('donatur-beranda', function(){
     $data['userstatus']= 'donatur';
     return view('donatur-beranda',$data);
+});
+Route::get('kegiatan', function(){
+    $data['userstatus']= 'donatur';
+    return view('kegiatan',$data);
+});
+Route::get('donasi', function(){
+    $data['userstatus']= 'donatur';
+    return view('donasi',$data);
 });
 
 

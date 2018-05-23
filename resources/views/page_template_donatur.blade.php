@@ -47,19 +47,15 @@
         {{-- @yield('menu') --}}
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="@yield('beranda')"><a href="#">Beranda <span class="sr-only"></span></a></li>
+            <li class="@yield('beranda')"><a href="/donatur-beranda">Beranda <span class="sr-only"></span></a></li>
             <li class="@yield('kegiatan')">
               <a href="/kegiatan" class=" dropdown-toggle" >Kegiatan</a>
               
             </li>
-            <li class="@yield('donasi')"><a href="/materi-pengajar">Donasi <span class="sr-only">(current)</span></a></li>
+            <li class="@yield('donasi')"><a href="/donasi">Donasi <span class="sr-only">(current)</span></a></li>
             
             </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Pencarian">
-            </div>
-          </form>
+          
       </div>
         
         <!-- /.navbar-collapse -->

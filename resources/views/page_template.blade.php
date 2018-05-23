@@ -65,11 +65,7 @@
             <li class="@yield('daftar')"><a href="/daftar-pengajar">Daftar Pengajar</a></li>
             
             </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Pencarian">
-            </div>
-          </form>
+          
       </div>
         
         <!-- /.navbar-collapse -->
