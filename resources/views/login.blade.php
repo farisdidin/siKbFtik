@@ -51,16 +51,15 @@
                 </div>
       
                 <div class="tab-pane " id="tab_donatur">
-                    <form action="auth.login" method="get">
-                        @csrf
+                    <form action="/donatur-beranda" method="get">
                         <label>Username:</label>
                         <div class="form-group has-feedback">
-                          <input name="username" type="text" class="form-control" placeholder="Username" required>
+                          <input name="username" type="text" class="form-control" placeholder="Username" required id="user-donatur"
                           <span class="glyphicon glyphicon-user form-control-feedback"></span>
                         </div>
                         <label>Kata Sandi:</label>
                         <div class="form-group has-feedback">
-                          <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required>
+                          <input name="password" type="password" class="form-control" placeholder="Kata Sandi" required id="password-donatur">
                           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                           <a href="lupa-password" class="text-center">Lupa Katasandi.</a>
                         </div>
@@ -73,7 +72,7 @@
                           </div>
                           <!-- /.col -->
                           <div class="col-xs-4">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat" > Masuk</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-flat" onclick=""> Masuk</button>
                           </div>
                           <!-- /.col -->
                         </div>
@@ -114,6 +113,14 @@
           increaseArea: '20%' /* optional */
         });
       });
+      function check(){
+        var user = document.getElementById('user-donatur').value;
+        var pass = document.getElementById('password-donatur').value;
+
+        if(user == 'didin' && pass == 'masuk'){
+          window.location.href = '{{ url("donatur-beranda") }}';
+        }
+      }
     </script>
     </body>
 @endsection 
