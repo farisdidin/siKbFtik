@@ -38,7 +38,7 @@
                             <label for="">Jumlah Donasi</label><br>
                             <div class="input-group"> 
                                 <span class="input-group-addon">Rp</span>
-                                <input type="number" value="1000" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="nominal" />
+                                <input type="number"  min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="nominal" />
                             </div> 
                         </div>
     
@@ -82,6 +82,7 @@
 
 @section('js')
 <script src="/js-webshim/minified/polyfiller.js"></script>
+<script src="/js/accounting.js"></script>
 <script>
     webshims.setOptions('forms-ext', {
         replaceUI: 'auto',
@@ -100,8 +101,9 @@
     function check(){
         document.getElementById("confirm-rekening").innerHTML = document.getElementById("no_rekening").value;
         document.getElementById("confirm-pemilik").innerHTML = document.getElementById("pemilik").value;
-        document.getElementById("confirm-nominal").innerHTML = document.getElementById("nominal").value;
-        
+        var nominal = document.getElementById("nominal").value;
+        var confirmMoney = accounting.formatMoney(nominal,"Rp. ");
+        document.getElementById("confirm-nominal").innerHTML = confirmMoney;
     }
 
 </script>
