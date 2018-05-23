@@ -38,7 +38,7 @@
                             <label for="">Jumlah Donasi</label><br>
                             <div class="input-group"> 
                                 <span class="input-group-addon">Rp</span>
-                                <input type="number"  min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="nominal" />
+                                <input type="number"  min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="nominal" placeholder="0.00"/>
                             </div> 
                         </div>
     
@@ -68,8 +68,8 @@
 
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+                  <button type="button" class="btn btn-primary">Bayar</button>
                 </div>
               </div>
               <!-- /.modal-content -->
