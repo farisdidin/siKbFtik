@@ -24,28 +24,31 @@
     {{-- rekening, pemilik rekening, nominal donasi --}}
     <div class="container col-md-6 col-md-offset-3">
         <form role="form" id="myform">
-            <div class="box box-primary">
-                <div class="box-body">
-                        <div class="form-group">
-                            <label for="">Nomor Rekening</label><br>
-                            <input type="text" class="form-control" placeholder="Masukkan Nomor Rekening" id="no_rekening" onkeypress="return isNumberKey(event)">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Pemilik Rekening</label>
-                            <input type="text" class="form-control" placeholder="Masukkan Nama Pemilik Rekening" id="pemilik">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Jumlah Donasi</label><br>
-                            <div class="input-group"> 
-                                <span class="input-group-addon">Rp</span>
-                                <input type="number"  min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="nominal" placeholder="0.00"/>
-                            </div> 
-                        </div>
-    
+            <div class="row align-items-center">
+                <div class="box box-primary ">
+                    <div class="box-body">
+                            <div class="form-group">
+                                <label for="">Nomor Rekening</label><br>
+                                <input type="text" class="form-control" placeholder="Masukkan Nomor Rekening" id="no_rekening" onkeypress="return isNumberKey(event)">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Pemilik Rekening</label>
+                                <input type="text" class="form-control" placeholder="Masukkan Nama Pemilik Rekening" id="pemilik">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Jumlah Donasi</label><br>
+                                <div class="input-group"> 
+                                    <span class="input-group-addon">Rp</span>
+                                    <input type="number"  min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="nominal" placeholder="0.00"/>
+                                </div> 
+                            </div>
+        
+                    </div>
+                    <div class="box-footer">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default" onclick="check()">Donasi</button>
+                    </div>
                 </div>
-                <div class="box-footer">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default" onclick="check()">Donasi</button>
-                </div>
+
             </div>
         </form>
     </div>

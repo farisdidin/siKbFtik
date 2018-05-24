@@ -105,6 +105,10 @@ Route::get('donasi', function(){
     return view('donasi',$data);
 });
 
+Route::get('input-umkm', function(){
+    $data['userstatus']= 'admin';
+    return view('input-umkm',$data);
+});
 
 Route::get('register', 'AuthController@showRegisterForm');
 Route::post('register', 'AuthController@register');

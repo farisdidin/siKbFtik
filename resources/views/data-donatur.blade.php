@@ -1,4 +1,4 @@
-@extends('page_template')
+@extends('page_template_donatur')
 @section('menu')
     
 @endsection
@@ -8,9 +8,10 @@
     <div class="col-md-4 col-md-offset-1">
         <div class="box box-primary">
             <div class="box-body box-profile">
-                <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
-
-                <h3 class="profile-username text-center">Nina Hanita</h3>
+                {{-- <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture"> --}}
+                <img src="/dist/img/user2-160x160.jpg" class="profile-user-img img-responsive img-circle" alt="User profile picture">
+                
+                <h3 class="profile-username text-center">Faris Didin</h3>
 
                 <p class="text-muted text-center">Donatur</p>
 
